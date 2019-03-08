@@ -61,7 +61,7 @@ im = ax.imshow(harvest)
 
 # We want to show all ticks...
 ax.set_xticks(np.arange(len(farmers)))##x轴上长度和farmers的一样长
-ax.set_yticks(np.arange(len(vegetables)))##y上的长度和vegetables的一样长
+ax.set_yticks(np.arange(len(vegetables)))##y上的长度和vegetables的一样长（axes里的子函数）
 # ... and label them with the respective list entries
 ax.set_xticklabels(farmers)#将farmers的元素安排在xlabel上（xticks作用）
 ax.set_yticklabels(vegetables)##将vegetables的元素安排在ylabel上

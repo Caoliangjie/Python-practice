@@ -16,9 +16,9 @@ width = 0.35  # the width of the bars
 
 fig, ax = plt.subplots()
 rects1 = ax.bar(ind - width/2, men_means, width, yerr=men_std,
-                color='SkyBlue', label='Men')
+                color='SkyBlue', label='Men')#设定棒状图天蓝色
 rects2 = ax.bar(ind + width/2, women_means, width, yerr=women_std,
-                color='IndianRed', label='Women')
+                color='IndianRed', label='Women')##设定印度红。
 
 # Add some text for labels, title and custom x-axis tick labels, etc.
 ax.set_ylabel('Scores')
@@ -28,7 +28,7 @@ ax.set_xticklabels(('G1', 'G2', 'G3', 'G4', 'G5'))
 ax.legend()
 
 
-def autolabel(rects, xpos='center'):
+def autolabel(rects, xpos='center'):##单独写一个函数设定label
     """
     Attach a text label above each bar in *rects*, displaying its height.
 
